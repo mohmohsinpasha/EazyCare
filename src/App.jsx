@@ -1,15 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+
 import Profile from './components/user/Profile'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+import Signin from './components/user/Signin';
+
+function App() {
   return (
+
     <Profile/>
   )
+
+    <div>
+      <Signin/>
+ 
+    </div>
+  );
+
 }
 
-export default App
+export default App;
