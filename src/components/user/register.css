@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.regis{
+    width: 800px;
+    height: 750px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: -30px;
+
+}
+#inh{
+text-shadow: 1px 1px 1px black;
+}
+#front{
+    margin-left:-60px ;
+    margin-top: 25px;
+}
+.resister{
+  margin: 150px 20px 20px 120px ;
+}
+#inpu1{
+    position: relative;
+    left: 60px;
+    top: 30px;
+    
+}
+#label1{
+    position: relative;
+    right: 260px;
+    top: 18px;
+    font-weight: bold;
+}
+#input1{
+    position: absolute;
+    width: 240px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-left:-350px ;
+    border: 1px solid;
+}
+#input1:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}
+
+#inpu2{
+    position: relative;
+    left: 290px;
+    top: 30px;
+}
+#label2{
+    position: relative;
+    right: 165px;
+    bottom: 5px;
+    
+
+    font-weight: bold;
+}
+#input2{
+    position: absolute;
+    width: 240px;
+    padding: 15px;
+    margin-top: 24px;
+    margin-left:-250px ;
+    border: 1px solid black;
+}
+#input2:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}
+#input3:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}
+#input4:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}
+#input5:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}
+#input6:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}
+#input7:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}
+#inpu3{
+    position: relative;
+    left: -20px;
+    top: 110px;
+}
+#label3{
+    position: relative;
+    right: 205px;
+    bottom: 5px;
+    font-weight: bold;
+}
+#input3{
+    position: absolute;
+    width: 570px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 24px;
+    margin-left:-250px ;
+    border: 1px solid black;
+}
+#inpu4{
+    position: relative;
+    left: -20px;
+    top: 190px;
+}
+#label4{
+    position: relative;
+    right: 200px;
+    bottom: 5px;
+    font-weight: bold;
+}
+#input4{
+    position: absolute;
+    width: 570px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 24px;
+    margin-left:-250px ;
+    border: 1px solid black;
+}
+#inpu5{
+    position: relative;
+    left: -23px;
+    top: 265px;
+}
+#label5{
+    position: relative;
+    right: 187px;
+    bottom: 5px;
+    font-weight: bold;
+}
+#input5{
+    position: absolute;
+    width: 570px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 24px;
+    margin-left:-250px ;
+    border: 1px solid black;
+}
+#inpu6{
+    position: relative;
+    left: 70px;
+    top: 310px;
+    
+}
+#label6{
+    position: relative;
+    right: 274px;
+    top: 18px;
+    font-weight: bold;
+}
+#input6{
+    position: absolute;
+    width: 260px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-left:-350px ;
+    border: 1px solid black;
+}
+#inpu7{
+    position: relative;
+    left: 345px;
+    top: 285px;
+    
+}
+#label7{
+    position: relative;
+    right: 207px;
+    top: 18px;
+    font-weight: bold;
+}
+#input7{
+    position: absolute;
+    width: 260px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-left:-350px ;
+    border: 1px solid black;
+}
+
+#rbtn
+{
+    position: relative;
+    top: 410px;
+    left: 45px;
+    background-color:#2a6592;
+    box-shadow: 4px 4px 4px black;
+    width: 580px;
+    padding-top:10px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+    border: 2px soild black;
+}
+@media screen and (max-width: 780px){
+    .regis{
+        width: 510px;
+        height: 740px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px black;
+        border: 2px solid black;
+        text-align: center;
+        margin-top: 430px;
+        margin-left: -20px;
+    }
+    #front{
+        margin-left:25px ;
+        margin-top: 25px;
+    }
+    #inh{
+        margin-left: -29px;
+        text-shadow: 1px 1px 1px black;
+    }
+    #inpu1{
+        position: relative;
+        left: 90px;
+        top: 29px;
+        
+    }
+    #label1{
+        position: relative;
+        right: 260px;
+        top: 20px;
+        font-weight: bold;
+    }
+    #input1{
+        position: absolute;
+        width: 180px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left:-350px ;
+        border: 1px solid black;
+    }
+    #inpu2{
+        position: relative;
+        left: 330px;
+        top: 4px;
+        
+    }
+    #label2{
+        position: relative;
+        right: 270px;
+        top: 21px;
+        font-weight: bold;
+    }
+    #input2{
+        position: absolute;
+        width: 180px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left:-350px ;
+        border: 1px solid black;
+    }
+    #inpu3{
+        position: relative;
+        left: 10px;
+        top: 110px;
+    }
+    #label3{
+        position: relative;
+        right: 205px;
+        bottom: 5px;
+        font-weight: bold;
+    }
+    #input3{
+        position: absolute;
+        width: 420px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 24px;
+        margin-left:-250px ;
+        border: 1px solid black;
+    }
+    #inpu4{
+        position: relative;
+        left: 10px;
+        top: 190px;
+    }
+    #label4{
+        position: relative;
+        right: 200px;
+        bottom: 5px;
+        font-weight: bold;
+    }
+    #input4{
+        position: absolute;
+        width: 420px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 24px;
+        margin-left:-250px ;
+        border: 1px solid black;
+    }
+    #inpu5{
+        position: relative;
+        left: 2px;
+        top: 265px;
+    }
+    #label5{
+        position: relative;
+        right: 187px;
+        bottom: 5px;
+        font-weight: bold;
+    }
+    #input5{
+        position: absolute;
+        width: 420px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 24px;
+        margin-left:-250px ;
+        border: 1px solid black;
+    }
+    #inpu6{
+        position: relative;
+        left: 100px;
+        top: 310px;
+        
+    }
+    #label6{
+        position: relative;
+        right: 274px;
+        top: 18px;
+        font-weight: bold;
+    }
+    #input6{
+        position: absolute;
+        width: 180px;
+        padding: 15px;
+        margin-top: 50px;
+        margin-left:-350px ;
+        border: 1px solid black;
+    }
+    #inpu7{
+        position: relative;
+        left: 305px;
+        top: 285px;
+        
+    }
+    #label7{
+        position: relative;
+        right: 207px;
+        top: 18px;
+        font-weight: bold;
+    }
+    #input7{
+        position: absolute;
+        width: 180px;
+        padding: 15px;
+        margin-top: 50px;
+        margin-left:-350px ;
+        border: 1px solid black;
+    }
+    
+    #rbtn
+    {
+        position: relative;
+        top: 410px;
+        left: -5px;
+        background-color: #2a6592;
+        box-shadow: 4px 4px 4px black;
+        width: 380px;
+        padding-top:10px ;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-bottom: 10px;
+        border: 2px soild black;
+    }
+}
