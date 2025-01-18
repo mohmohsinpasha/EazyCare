@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -11,7 +12,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -24,7 +26,14 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
+<<<<<<< HEAD
     "postcss": "^8.5.1",
+=======
+
+    "postcss": "^8.5.1",
+
+
+>>>>>>> main
     "tailwindcss": "^3.4.17",
     "vite": "^6.0.5"
   }
