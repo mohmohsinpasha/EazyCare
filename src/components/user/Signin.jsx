@@ -23,50 +23,73 @@
 // export default Signin
 
 import React, { useState } from 'react';
-
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import EmailIcon from '@mui/icons-material/Email';
+import LockIcon from '@mui/icons-material/Lock';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 function Signin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const handleSubmit = (e)=>{
-      e.preventDefault()
-      const login =  {email, password} 
-      console.log(login);
-      setEmail('');
-      setPassword('');
+  const [showPassword, setShowPassword] = useState(false);
 
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const login = { email, password };
+    console.log(login);
+    setEmail('');
+    setPassword('');
+  };
+
   return (
     <div className="p-6 md:p-10 flex h-screen items-center justify-center bg-gray-50">
       <div className="p-4 md:p-6 h-auto md:h-[30em] w-full max-w-sm md:max-w-md lg:max-w-lg rounded-2xl border border-black shadow-lg bg-slate-100 flex justify-center items-center">
         <form onSubmit={handleSubmit} className="w-full">
-          <h1 className="text-2xl md:text-4xl font-semibold text-center">Login</h1>
+          {/* Header with Icon */}
+          <div className="flex items-center justify-center mb-4">
+            <PersonOutlineIcon className="text-blue-500 mr-2 text-5xl md:text-6xl" />
+            <h1 className="text-2xl md:text-4xl font-semibold text-center">Login</h1>
+          </div>
           <p className="my-4 text-sm md:text-base text-center">
             Please login to book an appointment
           </p>
 
-          {/* Email Input */}
+          {/* Email Input with Icon */}
           <label className="block text-sm font-medium">Email</label>
-          <input
-            className="block h-10 w-full mt-2 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            type="email"
-            placeholder="Enter your email"
-            required
-            value={email}
-            onChange={(event)=> setEmail(event.target.value)}
-          />
-          
-          {/* Password Input */}
+          <div className="flex items-center mt-2 px-3 border rounded-md focus-within:ring-2 focus-within:ring-blue-500">
+            <EmailIcon className="text-gray-500 mr-2" />
+            <input
+              className="flex-grow h-10 border-none outline-none focus:outline-none"
+              type="email"
+              placeholder="Enter your email"
+              required
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+            />
+          </div>
+
+          {/* Password Input with Icon and Visibility Toggle */}
           <label className="block mt-4 text-sm font-medium">Password</label>
-          <input
-            className="block h-10 w-full mt-2 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            type="password"
-            placeholder="Enter your password"
-            required
-            value={password}
-            onChange={(e)=>setPassword(e.target.value)}
-          />
-    
+          <div className="relative flex items-center mt-2 px-3 border rounded-md focus-within:ring-2 focus-within:ring-blue-500">
+            <LockIcon className="text-gray-500 mr-2" />
+            <input
+              className="flex-grow h-10 border-none outline-none focus:outline-none pr-10"
+              type={showPassword ? 'text' : 'password'}
+              placeholder="Enter your password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button
+              type="button"
+              className="absolute right-3 text-gray-500 focus:outline-none"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
+            </button>
+          </div>
+
           {/* Login Button */}
           <button className="h-10 w-full mt-6 rounded-md bg-blue-500 text-white text-sm md:text-base font-medium hover:bg-blue-600 transition">
             Login

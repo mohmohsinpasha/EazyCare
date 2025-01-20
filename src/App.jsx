@@ -7,8 +7,9 @@ import Signin from './components/user/Signin';
 
 function App() {
   return (
-
-    <Profile/>
+    <div>
+      <Signin/>
+    </div>
   )
 
 
