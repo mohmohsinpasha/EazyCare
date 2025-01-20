@@ -11,11 +11,6 @@ function App() {
     <Profile/>
   )
 
-    <div>
-      <Signin/>
- 
-    </div>
-  );
 
 }
 
