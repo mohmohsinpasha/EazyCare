@@ -28,7 +28,7 @@ export default function Profile() {
       </table>
       <div className="mt-10">
         <button className='border border-primary px-8 py-2 rounded-full hover:te'>Edit</button>
-        <button className='border border-primary px-8 py-2 rounded-full'> save informaition</button>
+        <button className='border border-primary px-8 py-2 rounded-full '> save informaition</button>
       </div>
 
 
